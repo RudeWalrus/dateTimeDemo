@@ -1,0 +1,17 @@
+<div class="row form-inputs">
+  <div class="row col-sm-12 col-md-8 col-lg-8">
+    <%= f.input :name, :label => 'Title', required: true, :disabled => disabled %>
+    <%= f.input :date_field, as: :date_picker, :label => 'Date field', :disabled => disabled,
+                input_html: {data: {date_options: {
+                        defaultDate: '2012/12/25',
+                        showClose: true
+                }}} %>
+    <%= f.input :dateTime_field, as: :datetime_picker, :label => 'DateTime field', :disabled => disabled %>
+    <%= f.input :time_field, as: :time_picker, :label => 'Time field', :disabled => disabled %>
+    <!--<div class='row datetimerange'>-->
+      <% #= f.input :publish_date, as: :datetime_picker, wrapper: :ranged_datetime %>
+      <% #= f.input :expiration_date, as: :datetime_picker, wrapper: :ranged_datetime %>
+    <!--</div>-->
+    <%= f.input :comment, :label => 'Comment', :disabled => disabled %>
+  </div>
+</div>

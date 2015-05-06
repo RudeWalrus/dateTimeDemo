@@ -1,0 +1,2 @@
+module DemoModelsHelper
+end
